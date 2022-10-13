@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\princ\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gh-pages
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-8.0.302.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\princ\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\princ\AppData\Local\Programs\Python\Python37\;C:\Users\princ\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\princ\AppData\Local\Programs\Python\Python39\;C:\Users\princ\AppData\Local\Microsoft\WindowsApps;C:\Users\princ\AppData\Local\GitHubDesktop\bin;C:\Users\princ\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\princ\.dotnet\tools;C:\Users\princ\AppData\Local\spicetify;C:\Users\princ\AppData\Local\Android\Sdk\platform-tools;C:\Users\princ\AppData\Roaming\npm;C:\Users\princ\AppData\Local\Android\Sdk\platform-tools;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\princ\Pictures\1 School Stuff\Web Development\Portfolio\node_modules\@lmdb\lmdb-win32-x64\node.abi93.node'
+
+npm manifest: 
+  {
+    "homepage": "http://butterkn1f.github.io/portfolio",
+    "name": "index",
+    "version": "1.0.0",
+    "description": "Ho Li Lian's Portfolio",
+    "scripts": {
+      "start": "parcel ./src/index.html",
+      "prebuild-dev": "shx rm -rf dist/*",
+      "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+      "prebuild": "shx rm -rf dist/*",
+      "build": "parcel build ./src/index.html --public-url ./",
+      "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    },
+    "author": "Ho Li Lian",
+    "license": "ISC",
+    "devDependencies": {
+      "@parcel/transformer-sass": "^2.7.0",
+      "gsap": "^3.9.1",
+      "parcel": "^2.7.0",
+      "postcss": "^8.4.6",
+      "postcss-nested": "^5.0.6",
+      "shx": "^0.3.2"
+    },
+    "dependencies": {
+      "sass": "^1.49.7",
+      "smooth-scrollbar": "^8.7.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

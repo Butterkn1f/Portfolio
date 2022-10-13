@@ -1,0 +1,2 @@
+background-image: linear-gradient(to right top, #13131b, #15161f, #171823, #1a1a28, #1c1c2c);
+https://mycolor.space/?hex=%2321E6BD&sub=1

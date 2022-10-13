@@ -1,0 +1,28 @@
+{
+  "homepage": "http://butterkn1f.github.io/portfolio",
+  "name": "index",
+  "version": "1.0.0",
+  "description": "Ho Li Lian's Portfolio",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "author": "Ho Li Lian",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gsap": "^3.9.1",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.6",
+    "postcss-nested": "^5.0.6",
+    "shx": "^0.3.2"
+  },
+  "dependencies": {
+    "sass": "^1.49.7",
+    "smooth-scrollbar": "^8.7.4"
+  }
+}
