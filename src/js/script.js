@@ -204,6 +204,9 @@ window.addEventListener("load", () => {
     const picture = document.createElement("div");
 
     itemContainer.classList.add("item");
+    itemContainer.addEventListener('click', () => {
+      window.location.href=`workcontent.html?id=${item.id}`
+    })
     heading.classList.add("heading");
     title.classList.add("title");
     order.classList.add("order");
@@ -267,4 +270,11 @@ window.addEventListener("load", () => {
     observer.observe(p);
   });
 });
+}
+
+if (document.URL.includes("workcontent.html")) {
+  const urlParams = new URLSearchParams(window.location.search);
+  let id = urlParams.get('id');
+  if (id > 13 || id < 1)
+    id = 1;
 }

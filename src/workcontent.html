@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/workcontent.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="js/script.js" defer type="module"></script>
+    <title>Li Lian's Portfolio</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <a href="index.html" class="logo">LI LIAN<span>.</span></a>
+        <a class="hamburger-button">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+
+        <div class="nav-overlay">
+            <div class="overlay-menu">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="#" class="active">Experiences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        <section class="heroImage heroImage--video">
+            <div class="heroImage__container">
+                <div class="heroImage__imageContainer">
+                    <img src="images/work/1_Pirates.jpg" alt="Pirates" class="heroImage__image" />
+                </div>
+                <div class="heroImage__videoContainer">
+                    <div class="videoPlayer videoPlayer--hasStarted" style="visibility: hidden">
+                        <div class="videoPlayer__cover">
+                            <div class="parallaxBlock videoPlayer__coverInner" data-parallax-block-force="0.15">
+                                <img src="images/work/1_Pirates.jpg" alt="Pirates" class="parallaxBlock__content" style="transform: translate3d(0px, 15.3969px, 0px);" />
+                            </div>
+                        </div>
+                        <div class="videoPlayer__videoContainer">
+                            <!-- <video cover="images/work/1_Pirates.jpg" class="videoPlayer__video with_controls">
+                                <source src="images/work/1_PiratesVideo.mp4" type="video/mp4" />
+                            </video> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="videoPlayer__coverButton">
+                <span class="videoPlayer__coverButtonInner">Play</span>
+            </button>
+
+
+        </section>
+
+    </div>
+</body>
+
+</html>

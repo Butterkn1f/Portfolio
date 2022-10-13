@@ -1,0 +1,154 @@
+.heroImage--video {
+    text-align: center;
+}
+
+.heroImage {
+    padding: 6.875rem 0 4.625rem;
+    position: relative;
+    width: 100%;
+}
+
+.heroImage__container {
+    height: calc(90vh - 184px);
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    translate: (0, 100%);
+    max-width: 30vw;
+
+    animation: container 2s forwards 1;
+}
+
+.heroImage--video .heroImage__container {
+    display: inline-block;
+    width: auto;
+}
+
+.heroImage__imageContainer {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 75vw;
+}
+
+.heroImage__image {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    height: 100%;
+
+    animation: image 2s forwards 1;
+}
+
+.heroImage__videoContainer {
+    height: 100%;
+}
+
+.heroImage .videoPlayer {
+    height: 100%;
+    position: relative;
+    visibility: visible;
+}
+
+.videoPlayer--hasStarted .videoPlayer__cover {
+    display: none;
+}
+
+.videoPlayer__coverButton {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: "Moderat", sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 150px;
+    letter-spacing: .09125rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.videoPlayer__coverButtonInner {
+    color: black;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoPlayer__cover {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.videoPlayer__coverInner {
+    width: 100%;
+    height: 100%;
+}
+
+.parallaxBlock {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.parallaxBlock__content {
+    height: 110%;
+    object-fit: cover;
+    position: relative;
+    top: -5%;
+    width: 100%;
+    transform: translate3d(0px, 15.3969px, 0px);
+}
+
+.heroImage .videoPlayer__videoContainer {
+    height: 100%;
+    width: auto;
+    font-size: 0;
+    position: relative;
+}
+
+.heroImage .videoPlayer__video {
+    height: 100.01% !important;
+    width: auto !important;
+}
+
+@keyframes container {
+    0% {
+        opacity: 0;
+        translate: (0, 100%);
+        max-width: 30vw;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        max-width: 75vw;
+    }
+}
+
+@keyframes image {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    1% {
+        transform: translate3d(-501.6px, -247.6px, 0px) scale(1, 1);
+    }
+
+    100% {
+        transform: matrix(1.1, 0, 0, 1.1, -501.6, -247.6);
+    }
+}
