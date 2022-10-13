@@ -9,7 +9,9 @@
     "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build ./src/index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "predeploy": "shx rm -rf dist && parcel build ./*.html --public-url https://github.com/Butterkn1f/Portfolio",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Ho Li Lian",
   "license": "ISC",
@@ -22,6 +24,8 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
+    "dist": "^0.1.2",
+    "gh-pages": "^4.0.0",
     "sass": "^1.49.7",
     "smooth-scrollbar": "^8.7.4"
   }
